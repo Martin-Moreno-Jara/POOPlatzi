@@ -1,3 +1,9 @@
 {
-    "python.autoComplete.extraPaths": ["./Python"],
+    "python.autoComplete.extraPaths": [
+        "./Python"
+    ],
+    "python.analysis.extraPaths": [
+        "./Python"
+    ],
+    "php.validate.executablePath": "c:\\xampp\\php\\php.exe",
 }

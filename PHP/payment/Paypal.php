@@ -7,5 +7,11 @@ class Paypal extends Payment{
     {
         $this->email = $email;
     }
+    public function setEmail($email){
+        $this->email = $email;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
 }
 ?>

@@ -36,8 +36,8 @@ class Account:
     def getPassword(self):
         return self.__password
 
-    def printData(self):
-        return "name: "+self.__name+" document: "+self.__document
+    def __str__(self) -> str:
+        return "name: ",self.__name
 
 
 

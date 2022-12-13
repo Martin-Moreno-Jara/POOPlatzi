@@ -1,4 +1,5 @@
 from cars.Car import Car
+
 class UberX(Car):
     __brand = str
     __model = str
@@ -18,4 +19,7 @@ class UberX(Car):
     
     def getModel(self):
         return self.__model
+
+    def __str__(self):
+        return super().__str__()," Brand: ",self.__brand," model: ",self.__model
 

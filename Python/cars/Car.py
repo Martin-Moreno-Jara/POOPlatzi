@@ -25,7 +25,14 @@ class Car:
         return self.__driver
     
     def setPassenger(self,passenger):
-        self.__passenger=passenger
-    
+        if passenger ==4:
+            self.__passenger=passenger
+        else:
+            print("Debe tener 4 pasajeros")
+
     def getPassenger(self):
         return self.__passenger
+    
+    def __str__(self) :
+        return "License: ",self.__license," Driver: ",self.__driver.__str__()
+    

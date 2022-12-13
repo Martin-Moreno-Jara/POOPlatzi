@@ -17,7 +17,13 @@
         $this->driver = $a;
     }
     public function setPassenger($a){
-        $this->passenger = $a;
+        if($a==4){
+            $this->passenger = $a;
+        }
+        else{
+            echo "Debe tener 4 pasajeros";
+        }
+
     }
     public function getId(){
         return $this->id;
@@ -33,7 +39,12 @@
     }
 
     public function printDataCar(){
-        echo "licencia: $this->license, Driver: ".$this->driver->getName();
+        echo "licencia: $this->license
+        Driver:" . $this->driver->getName().  "\n
+        
+        
+        ";
+        
     }
     }
 

@@ -23,6 +23,14 @@
         public function getBrand(){
             return $this->brand;
         }
+        public function printDataCar(){
+            parent::printDataCar();
+        echo "brand: $this->brand \n
+        model: $this->model \n
+        
+       
+           ";
+        }
             
         }
 

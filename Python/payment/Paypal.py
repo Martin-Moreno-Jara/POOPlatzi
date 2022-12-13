@@ -1,5 +1,11 @@
 from payment.Payment import Payment
 class Paypal(Payment):
-    email = str
+    __email = str
     def __init__(self,email):
-        self.email = email
+        self.__email = email
+    
+    def setEmail(self,email):
+        self.__email=email
+    
+    def getEmail(self):
+        return self.__email
